@@ -2,13 +2,14 @@ import requests as req
 import json
 from datetime import datetime
 import pytextnow as ptn
-from json_functions import file
-
+from Program.funcs import file
+  
 config_file = 'config.json'
 main_config = file(config_file)
 auth_data = main_config.read()
 
-c = ptn.Client(username=auth_data['username'], sid_cookie=auth_data['connect.sid'], csrf_cookie=auth_data['_csrf'])
+if main_config.read()['setup'] != "":     
+    c = ptn.Client(username=auth_data['username'], sid_cookie=auth_data['connect.sid'], csrf_cookie=auth_data['_csrf'])
 
 def convert(val):
     val -= 273.15

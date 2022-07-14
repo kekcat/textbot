@@ -1,5 +1,10 @@
-from commands import ptn_init
-from json_functions import file
+from Program.commands import ptn_init
+from Program.funcs import file
+import sys
+
+
+config_file = 'config.json'
+main_config = file(config_file)
 
 def global_startup():
 
@@ -31,16 +36,14 @@ def global_startup():
         print("invalid")
         global_startup()
 
-if __name__ == "__main__":
-    config_file = 'config.json'
-    main_config = file(config_file)
-
-    if main_config.read()['setup'] == '0':
+def init_start():
+    if main_config.read()['setup'] == "":
         print("starting first time setup")
         main_config.write_config()
     
     else:
         global_startup()
+
 
  
 
