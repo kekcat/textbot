@@ -1,4 +1,4 @@
-from Program.Texting.TextingService import TextService
+from Program.Backend.Texting.TextingService import TextService
 
 
 class Command:

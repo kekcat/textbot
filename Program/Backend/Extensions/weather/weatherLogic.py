@@ -1,4 +1,4 @@
-from Program.Utils.configReading import readConfig
+from Program.Backend.Utils.configReading import readConfig
 from datetime import datetime 
 
 config = '/Program/Extensions/weather/weatherConfig.json'

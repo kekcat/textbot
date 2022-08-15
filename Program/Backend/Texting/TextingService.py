@@ -1,4 +1,4 @@
-from Program.Utils.configReading import readConfig
+from Program.Backend.Utils.configReading import readConfig
 import pytextnow as texting
 
 

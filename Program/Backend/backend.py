@@ -1,7 +1,7 @@
-from Program.Extensions.manager import loadExtensions
-from Program.Texting.CommandModel import Message
-from Program.Texting.TextingService import TextService
-from Program.Extensions.manager import loadExtensions
+from Program.Backend.Extensions.manager import loadExtensions
+from Program.Backend.Texting.CommandModel import Message
+from Program.Backend.Texting.TextingService import TextService
+from Program.Backend.Extensions.manager import loadExtensions
 
 
 def testing():
