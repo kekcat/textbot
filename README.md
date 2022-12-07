@@ -11,5 +11,51 @@
 
 
 
+## Installation
 
+```bash
+npm install --save-dev @babel/plugin-transform-react-jsx
+```
+
+## Usage
+
+### Via `.babelrc` (Recommended)
+
+**.babelrc**
+
+```json
+{
+  "plugins": ["@babel/plugin-transform-react-jsx"]
+}
+```
+
+### Via CLI
+
+```bash
+babel --plugins @babel/plugin-transform-react-jsx script.js
+```
+
+### Via Node API
+
+```javascript
+require("@babel/core").transform("code", {
+  plugins: ["@babel/plugin-transform-react-jsx"]
+});
+```
+
+## Options
+
+### `pragma`
+
+**Type:** `string`  
+**Default:** `React.createElement`
+
+The function used when compiling JSX expressions.
+
+```json
+{
+  "plugins": [
+    ["@babel/plugin-transform-react-jsx", {
+      "pragma": "dom"
+   
 
