@@ -12,7 +12,7 @@ def convert(val):
     return round(val)
  
 
-def get_weather():
+def get_weather(**kwargs):
     now = datetime.now()
     data = readConfig(config)
 
@@ -47,4 +47,4 @@ def get_weather():
 
     cur_time = now.strftime("%H:%M:%S")
 
-    return "time: {} weather:".format(cur_time) + lines
+    return "({})time: {} weather:".format(kwargs, cur_time) + lines

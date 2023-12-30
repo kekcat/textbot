@@ -3,6 +3,6 @@ from datetime import datetime
 timeName = "/time"
 timeHelp = "Gets the current date and time"
 
-def getTime():
+def getTime(**kwargs):
     date = datetime.now()
-    return date.strftime("%Y %b %d %I:%M%p, %H:%M:%S")
+    return f"{kwargs}" + date.strftime("%Y %b %d %I:%M%p, %H:%M:%S")
