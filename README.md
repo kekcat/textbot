@@ -6,13 +6,3 @@
 ## INFO
 - Developer - Ben Song
 - Discord - fgdxfg bjnm jgvhbubb#4917
-
-## INSTALLING
-#### Using GIT clone
-```bash
-git clone https://github.com/kekcat/textbot.git
-```
-
-
-
-
